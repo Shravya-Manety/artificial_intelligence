@@ -50,20 +50,36 @@ cell with Z=-23 to adjacent cell to the West with Z=-30 would cost 10+|-23+30|=1
 design an admissible heuristic for A* for this problem.
 
 INPUT:
+
 A*
+
 8 6
+
 4 4
+
 7
+
 2
+
 1 1
+
 6 3
-0 0 0 0 0 0 0 0
-0 60 64 57 45 66 68 0
-0 63 64 57 45 67 68 0
-0 58 64 57 45 68 67 0
-0 60 61 67 65 66 69 0
+
 0 0 0 0 0 0 0 0
 
+0 60 64 57 45 66 68 0
+
+0 63 64 57 45 67 68 0
+
+0 58 64 57 45 68 67 0
+
+0 60 61 67 65 66 69 0
+
+0 0 0 0 0 0 0 0
+
+
 OUTPUT: 
+
 4,4 3,4 2,3 2,2 1,1
+
 4,4 5,4 6,3
