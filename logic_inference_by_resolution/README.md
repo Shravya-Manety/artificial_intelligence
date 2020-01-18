@@ -41,3 +41,5 @@ given predicate name will not appear with different number of arguments.
 12. You can assume that the input format is exactly as it is described.
 13. There will be no syntax errors in the given input.
 14. The KB will be true (i.e., will not contain contradictions).
+
+Please refer example.txt for a sample execution.
