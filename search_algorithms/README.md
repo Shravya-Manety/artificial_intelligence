@@ -48,3 +48,5 @@ difference in elevation between the two cells. For example, moving diagonally fr
 Z=20 to adjacent North-East cell with elevation Z=18 would cost 14+|20-18|=16. Moving from a
 cell with Z=-23 to adjacent cell to the West with Z=-30 would cost 10+|-23+30|=17. You need to
 design an admissible heuristic for A* for this problem.
+
+Please refer example.txt for an example execution.
