@@ -1,0 +1,134 @@
+1
+Criminal(West)
+8
+American(x) & Weapon(y) & Sells(x,y,z) & Hostile(z) => Criminal(x)
+Owns(Nono, M)
+Missile(M)
+Missile(x) & Owns(Nono,x) => Sells(West, x, Nono)
+Missile(x) => Weapon(x)
+Enemy(x,America) => Hostile(x)
+American(West)
+Enemy(Nono, America)
+
+TRUE
+
+6
+F(Bob)
+H(John)
+~H(Alice)
+~H(John)
+G(Bob)
+G(Tom)
+14
+A(x) => H(x)
+D(x,y) => ~H(y)
+B(x,y) & C(x,y) => A(x)
+B(John,Alice)
+B(John,Bob)
+D(x,y) & Q(y) => C(x,y)
+D(John,Alice)
+Q(Bob)
+D(John,Bob)
+F(x) => G(x)
+G(x) => H(x)
+H(x) => F(x)
+R(x) => H(x)
+R(Tom)
+
+FALSE
+TRUE
+TRUE
+FALSE
+FALSE
+TRUE
+
+2
+Mortal(Socretes)
+~Mortal(Aristotle)
+3
+Man(x) => Mortal(x)
+Man(Socretes)
+Man(Aristotle)
+
+TRUE
+FALSE
+
+2
+Trump (Ram)
+Trump (Sita)
+7
+Man (x) => Trump (x)
+White (x) => Trump (x)
+Indian(x) => ~White(x)
+Woman(x) => ~Man(x)
+Man(Ram)
+Indian (Ram)
+Woman (Sita)
+Indian (Sita)
+
+TRUE
+FALSE
+
+2
+King (John)
+King (Julius)
+8
+Queen (Mary)
+Husband (Mary, John)
+Husband (y, x) & Queen(y) => King(x)
+Queen(x) => Beautiful(x)
+Husband (Sita, Julius)
+Sister (Mary, Sita)
+Sister (x, y) => Sister (y, x)
+Sister (x, y) & Queen (x) => Queen(y)
+
+TRUE
+TRUE
+
+2
+~Loves(Mary, John)
+~Loves(Mary, Bill)
+6
+Loves(Mary,x) => Star(x)
+Student(x) & ~Pass(x) => ~Play(x)
+Student(John)
+Student(x) & ~Study(x) => ~Pass(x)
+~Play(x) => ~Star(x)
+~Study(John)
+
+TRUE
+FALSE
+
+2
+Livesmore(Ani)
+Livesmore(Sid)
+8
+Rich(x)    &   Healthy(x) =>  Livesmore(x)
+Exercise(x)  => Healthy(x)
+Eatwell(x))     => Healthy(x)
+Rich(y) & Father(y,x) => Rich(x)
+Rich(Ani)
+Father(Ani,Sid)
+~Eatwell(Sid)
+Exercise(Sid)
+
+FALSE
+TRUE
+
+2
+~Date(Mary, John)
+Date(Mary, Bill)
+10
+Harley(y) & Rides(x,y) => Rough(x)
+Biker(x) => Rides(x,Davidson)
+BMW(Vfour)
+Harley(Davidson)
+Rides(x,y) & BMW(y) => Yuppie(x)
+Yuppie(x) => Lawyer(x)
+Nice(x) & Rough(y) => ~Date(x,y)
+Nice(Mary)
+Biker(John)
+~Lawer(John)
+
+TRUE
+FALSE
